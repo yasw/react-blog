@@ -73,10 +73,9 @@ app.get("/api/user/logout", auth, (req, res) => {
     })
 })
 
-// app.get("/", (req, res) => {
-//     res.send(req.body)
-//         // res.send(req.params())
-//         // res.json({ 'gi ya': 'thanku' })
-// });
+
+app.get("/", (req, res) => {
+    res.json({ 'hey ya': 'I\'m happy to do that' })
+});
 const port = process.env.PORT || 5000
 app.listen(port, () => console.log(`Server running on port ${port} `));
